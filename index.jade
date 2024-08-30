@@ -1,0 +1,78 @@
+doctype html
+html(lang="en")
+	head
+		title Nasihat Santa Angela
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="description" content="Jade website template")
+		meta(name="keywords" content="apollo, jade, template, html, sass, jquery")
+		meta(name="author" content="Bucky Maler")
+		link(rel="stylesheet" href="assets/css/main.css")
+	body
+		section(id="hero")
+			include ./letters/a.html
+			header
+				.nav-toggle
+					p Menu
+					span
+				ul(class="nav")
+					li #[a(href="#about") Tentang]
+					li #[a(href="#full-slide") Work]
+					li #[a(href="#contact") Contact]
+			.wrapper
+				.welcome
+					h1 #[strong Nasihat] Santa Angela
+					p Cinta adalah dasar dari semua tindakab Santa Angela; Cinta ganda - dua cinta yang tak terpisahkan - Cinta kepada Allah dan Cinta kepada sesama.
+				.santa
+					img(src="assets/img/santa.png" alt="SantaAngela")
+		section(id="about")
+			include ./letters/p.html
+			.wrapper
+				.regula
+					img(src="assets/img/regula.png" alt="Regula")
+				.blurb
+					h2 Santa Angela #[strong Pelindungku]
+					p Usahakan, dengan bantuan Allah, untuk memperoleh sikap batin yang menggerakkan Anda untuk memelihara dan memimpin Serikat ini hanya karena cinta kepadaNya dan perhatian akan keselamatan jiwa jiwa.(Warisan 1:2-3)#[br]#[br]Dengan demikian setiap karya dan tindakan Anda sebagai pembesar karena berakar dalam cinta kasih ganda ini, niscaya akan menghasilkan buah yang baik dan terpuji.(Warisan 1:4)
+		section(id="full-slide")
+			include ./letters/o.html
+			ul(class="banner")
+				li(class="active")
+				li
+				li
+			i(class="icon-chevron-thin-left prev")
+			i(class="icon-chevron-thin-right next")
+		section(id="featured")
+			include ./letters/l.html
+			.wrapper
+				.blurb
+					h2 #[strong Percaya] kita tidak pernah sendirian dalam setiap tindakan.
+					p Semoga kekuatan dan hiburan Roh Kudus menyertai Anda semua, agar tabah serta teguh dan setia menjalankan tugas yang telah dipercayakan kepada Anda. (Prakata Nasehat 3-4)#[br]#[br]Yakinlah, percayalah sebulat-bulatnya, bahwa Allah akan membantu Anda dalam segala hal.
+				.warisan
+					img(src="assets/img/warisan.jpg" alt="Warisan")
+		section(id="three-slide")
+			include ./letters/l.html
+			.wrapper
+				ul(class="slider")
+					li(class="back")
+						img(src="assets/img/three-slide/thumb-1.jpg")
+					li(class="current")
+						img(src="assets/img/three-slide/thumb-2.jpg")
+					li(class="front")
+						img(src="assets/img/three-slide/thumb-3.jpg")
+					li
+						img(src="assets/img/three-slide/thumb-4.jpg")
+			i(class="icon-chevron-thin-left prev")
+			i(class="icon-chevron-thin-right next")
+		section(id="contact")
+			include ./letters/o.html
+			.wrapper
+				.blurb
+					h2 #[strong Doa] 
+					p Sewajarnya Anda berdoa kepada Allah agar dia menerangi dan membimbing Anda dan mengajarkan kepada Anda, apa yang harus Anda lakukan dalam tugas anda demi cinta kepadaNya. (Prakata Nasehat 7)#[br]#[br]Langkah Anda pertama senantiasa harus kembali ke Yesus Kristus. (Warisan Terakhir 3)
+				.tetaplah-berdoa
+					img(src="assets/img/tetaplah-berdoa.jpg" alt="Berdoa")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		script window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+		script(src="assets/js/functions-min.js")
